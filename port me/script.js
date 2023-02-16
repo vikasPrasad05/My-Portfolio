@@ -1,11 +1,11 @@
-const image = document.querySelector(".image");
+const image = document.querySelector(".image-container");
 const prev = document.getElementById("prev");
 const next = document.getElementById("next");
 
 const sun = document.querySelector(".sun");
 const imageContainer = document.querySelector(".nav-container")
 const home = document.querySelector("#home");
-const homeData = document.querySelector(".home-data")
+const homeData = document.querySelector(".home-data-section")
 const skills = document.querySelector("#skills")
 const projects = document.querySelector("#projects");
 const project = document.querySelectorAll(".project");

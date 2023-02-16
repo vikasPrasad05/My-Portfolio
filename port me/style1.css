@@ -7,8 +7,7 @@
 }
 body{
     user-select: none;
-    /* min-height: 100vh; */
-    overflow: hidden;
+
 }
 /* --------------------nav-container---------------------- */
 
@@ -109,7 +108,7 @@ span div{
   
     .rand1{
   
-      height: 150px;
+      height: 135px;
     }
   }
 /*-----------------------home contant------------------------ */
@@ -253,7 +252,7 @@ span div{
     justify-content: center;
     flex-wrap: wrap;
     height: 100vh;
-    height: 100vh;
+    
      
 }
 .skill-icon{
@@ -394,7 +393,7 @@ a{
     
 }
 .contact-box a i {
-    font-size: 70px;
+    font-size: 50px;
     border: 5px solid black;
     padding: 18px 20px;
     display: flex;
@@ -420,12 +419,33 @@ a{
 
 /* DARK MODE  */
 
-#black{
+.sun{
     position: absolute;
     top: 100px;
-    left: 50%;
+    display: block;
+    left: 47%;
+    transition: transform 1s ease;
     
 }
+
+.sun:hover{
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;    
+}
+
+/* using kyeframes so spin  */
+
+@-webkit-keyframes spin{
+    100%{-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin{
+    100%{-webkit-transform: rotate(360deg);}
+}
+@keyframes spin{
+    100%{-webkit-transform: rotate(360deg);}
+}
+
 
 .contact-box i{
     color: #0099ff;
